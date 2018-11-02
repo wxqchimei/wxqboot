@@ -160,6 +160,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>com.jdd</groupId>
+			<artifactId>fastdfs-client-java</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+
+		<dependency>
 			<groupId>io.shardingsphere</groupId>
 			<artifactId>sharding-jdbc-core</artifactId>
 			<version>RELEASE</version>
@@ -219,6 +225,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>wxqboot</finalName>
 	</build>
 
 

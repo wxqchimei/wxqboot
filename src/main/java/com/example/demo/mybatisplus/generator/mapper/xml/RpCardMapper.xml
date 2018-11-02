@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.RpCardDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.demo.mybatisplus.generator.entity.RpCardENT">
+        <id column="n_id" property="id" />
+        <result column="s_name" property="name" />
+        <result column="s_desc" property="desc" />
+        <result column="n_type" property="type" />
+        <result column="n_discount_ratio" property="discountRatio" />
+        <result column="n_money" property="money" />
+        <result column="n_threshold" property="threshold" />
+        <result column="n_once_only_status" property="onceOnlyStatus" />
+        <result column="n_effective_day" property="effectiveDay" />
+        <result column="d_expire_time" property="expireTime" />
+        <result column="n_status" property="status" />
+        <result column="n_send_day" property="sendDay" />
+        <result column="d_send_time" property="sendTime" />
+        <result column="s_updater" property="updater" />
+        <result column="d_update_time" property="updateTime" />
+        <result column="s_creator" property="creator" />
+        <result column="d_create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        n_id, s_name, s_desc, n_type, n_discount_ratio, n_money, n_threshold, n_once_only_status, n_effective_day, d_expire_time, n_status, n_send_day, d_send_time, s_updater, d_update_time, s_creator, d_create_time
+    </sql>
+
+</mapper>

@@ -159,11 +159,13 @@
 			<version>2.9.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.csource/fastdfs-client-java -->
 		<dependency>
 			<groupId>com.jdd</groupId>
 			<artifactId>fastdfs-client-java</artifactId>
-			<version>RELEASE</version>
+			<version>1.25</version>
 		</dependency>
+
 
 		<dependency>
 			<groupId>io.shardingsphere</groupId>
@@ -177,6 +179,11 @@
 			<version>RELEASE</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.netflix.hystrix</groupId>
+			<artifactId>hystrix-core</artifactId>
+			<version>1.5.12</version>
+		</dependency>
 		<dependency>
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity</artifactId>

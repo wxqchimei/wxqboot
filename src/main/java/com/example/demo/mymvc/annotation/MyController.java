@@ -1,4 +1,4 @@
-package com.example.demo.annotation;
+package com.example.demo.mymvc.annotation;
 
 import java.lang.annotation.*;
 

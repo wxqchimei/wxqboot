@@ -5,7 +5,7 @@
          version="3.0">
     <servlet>
         <servlet-name>MySpringMVC</servlet-name>
-        <servlet-class>com.example.demo.MyDispatchServlet</servlet-class>
+        <servlet-class>com.example.demo.mymvc.MyDispatchServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>classpath:application.properties</param-value>

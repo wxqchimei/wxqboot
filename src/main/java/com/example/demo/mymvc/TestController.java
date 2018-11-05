@@ -1,8 +1,8 @@
-package com.example.demo;
+package com.example.demo.mymvc;
 
-import com.example.demo.annotation.MyController;
-import com.example.demo.annotation.MyRequestMapping;
-import com.example.demo.annotation.MyRequestParam;
+import com.example.demo.mymvc.annotation.MyController;
+import com.example.demo.mymvc.annotation.MyRequestMapping;
+import com.example.demo.mymvc.annotation.MyRequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

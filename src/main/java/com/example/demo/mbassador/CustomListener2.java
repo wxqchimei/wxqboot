@@ -13,7 +13,7 @@ import java.io.File;
  * @date 2018-10-31
  */
 @Listener(references = References.Weak)
-public class CustomListener {
+public class CustomListener2 {
 
 //    @Handler(invocation = TimingInvocation.class, filters = {@Filter(Urlfilter.class)})
     @Handler
@@ -28,7 +28,7 @@ public class CustomListener {
     }
 
 
-    public static class TimingInvocation extends HandlerInvocation<CustomListener, File> {
+    public static class TimingInvocation extends HandlerInvocation<CustomListener2, File> {
 
         public TimingInvocation(SubscriptionContext context) {
             super(context);
@@ -36,7 +36,7 @@ public class CustomListener {
 
 
         @Override
-        public void invoke(CustomListener customListener, File file, MessagePublication messagePublication) {
+        public void invoke(CustomListener2 customListener, File file, MessagePublication messagePublication) {
             long start = System.currentTimeMillis();
 //            customListener.handle(file);
             long duration = System.currentTimeMillis() - start;

@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * @date 2018-10-31
  */
 public class PubAndSub<T> {
-    MBassador<T> bus = new MBassador<T>(new BusConfiguration()
+    private MBassador<T> bus = new MBassador<T>(new BusConfiguration()
             .addFeature(Feature.SyncPubSub.Default())
             .addFeature(Feature.AsynchronousHandlerInvocation.Default())
             .addFeature(Feature.AsynchronousMessageDispatch.Default())
@@ -26,20 +26,20 @@ public class PubAndSub<T> {
      * @param listener
      * @return
      */
-    public MBassador addListener(Object listener) {
+    public PubAndSub addListener(Object listener) {
         bus.subscribe(listener);
-        return bus;
+        return this;
     }
 
-    public MBassador puclishAsync(T message) {
+    public PubAndSub puclishAsync(T message) {
         bus.publishAsync(message, 10, TimeUnit.MINUTES);
 //        bus.post(message).asynchronously(); //same as above
-        return bus;
+        return this;
     }
 
-    public MBassador puclishSync(T message) {
+    public PubAndSub puclishSync(T message) {
         bus.publish(message);
 //        bus.post(message).now(); //same as above
-        return bus;
+        return this;
     }
 }

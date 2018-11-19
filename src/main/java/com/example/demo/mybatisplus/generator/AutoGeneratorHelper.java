@@ -52,7 +52,7 @@ public class AutoGeneratorHelper {
 
         //生成实体策略信息
         StrategyConfig sc = new StrategyConfig();
-//        sc.setInclude("rp_card");
+        sc.setInclude("finance_system_operation_log");
         sc.setNaming(NamingStrategy.underline_to_camel);
         sc.setColumnNaming(NamingStrategy.underline_to_camel);
         sc.setFieldPrefix(resourceBundle.getString("strategy.fieldPrefix").split(","));

@@ -20,15 +20,7 @@ public class ControlAdvice {
     @ResponseBody
     @ExceptionHandler
     public Result handleThrowable(Exception e) {
-        if (e instanceof ConstraintViolationException) {
-            log.warn(e.getMessage(), e);
-            return ResultGenerator.genFailResult(e.getMessage());
-        } else if (e instanceof MethodArgumentNotValidException) {
-            return ResultGenerator.genFailResult(e.getMessage());
-        } else if (e instanceof BindException) {
-            return ResultGenerator.genFailResult(e.getMessage());
-        }
-        return ResultGenerator.genFailResult("系统忙");
+        return ResultGenerator.genFailResult(e.getMessage());
     }
 
 }

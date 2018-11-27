@@ -11,6 +11,11 @@ import org.springframework.stereotype.Component;
 @CacheConfig
 @Component
 public class RedisCacheDemo {
+    /**
+     * 在redis中会以 wxq:test::1这样的方式存储
+     * @param s
+     * @return
+     */
     @Cacheable(value = "wxq:test", key = "#p0")
     public String getStr(String s) {
         return String.valueOf(System.currentTimeMillis());

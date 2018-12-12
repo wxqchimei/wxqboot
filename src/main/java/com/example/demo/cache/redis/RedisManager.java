@@ -1,7 +1,7 @@
 package com.example.demo.cache.redis;
 
-import com.xiaoleilu.hutool.exceptions.ExceptionUtil;
-import com.xiaoleilu.hutool.json.JSONUtil;
+import cn.hutool.core.exceptions.ExceptionUtil;
+import cn.hutool.json.JSONUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import redis.clients.jedis.*;
@@ -729,7 +729,7 @@ public  class RedisManager {
 				logger.warn("ip:{} port:{} command：Pipeline zadd key:{} execution time:{}ms", this.host, this.port, key, time);
 			}
 		} catch (Exception e) {
-			logger.error("command：Pipeline zadd key:{} ex={}",key,ExceptionUtil.getMessage(e));
+			logger.error("command：Pipeline zadd key:{} ex={}",key, ExceptionUtil.getMessage(e));
 		} finally {
 			if (sj != null) {
 				returnResource(sj);

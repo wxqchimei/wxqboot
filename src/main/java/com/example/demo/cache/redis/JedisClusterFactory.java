@@ -1,10 +1,6 @@
 package com.example.demo.cache.redis;
 
 import com.google.common.collect.Sets;
-import com.xiaoleilu.hutool.exceptions.ExceptionUtil;
-import com.xiaoleilu.hutool.json.JSON;
-import com.xiaoleilu.hutool.json.JSONObject;
-import com.xiaoleilu.hutool.json.JSONUtil;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

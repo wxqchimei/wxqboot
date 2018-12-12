@@ -20,4 +20,5 @@ public class AlarmConsumer {
     public void consumeQueue(String text) {
         System.out.println("消费者点对点受到消息1" + text);
     }
+
 }

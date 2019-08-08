@@ -1,0 +1,1 @@
+### 在Spring中如果需要发布订阅，可以使用applicationEvent和EventListener(spring注解)

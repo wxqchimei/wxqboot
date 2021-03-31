@@ -40,7 +40,7 @@
         <lombok.versin>1.18.4</lombok.versin>
         <javassist.version>3.25.0-GA</javassist.version>
         <jetcache.version>2.5.9</jetcache.version>
-        <guava.version>28.0-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
     </properties>
 
     <dependencies>
